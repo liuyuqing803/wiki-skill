@@ -4,10 +4,10 @@ Personal LLM Knowledge Base skill for maintaining Obsidian-style research wikis.
 
 ## Install
 
-Install the skill into the shared agent skills directory:
+Clone and install this skill into your local agent skills directory:
 
 ```bash
-mkdir -p ~/.agents/skills && git clone https://github.com/liuyuqing803/wiki-skill.git ~/.agents/skills/wiki
+mkdir -p ~/.agents/skills && if [ -d ~/.agents/skills/wiki/.git ]; then git -C ~/.agents/skills/wiki pull --ff-only; else git clone https://github.com/liuyuqing803/wiki-skill.git ~/.agents/skills/wiki; fi
 ```
 
 ## Contents
