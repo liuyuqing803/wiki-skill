@@ -4,7 +4,16 @@ Personal LLM Knowledge Base skill for maintaining Obsidian-style research wikis.
 
 ## Install
 
-Clone the whole skill folder into your Codex skills directory:
+Recommended: use Codex's built-in skill installer:
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo liuyuqing803/wiki-skill \
+  --path . \
+  --name wiki
+```
+
+Fallback: clone the whole skill folder into your Codex skills directory:
 
 ```bash
 mkdir -p ~/.codex/skills
