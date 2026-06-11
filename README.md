@@ -4,15 +4,16 @@ Personal LLM Knowledge Base skill for maintaining Obsidian-style research wikis.
 
 ## Install
 
-Clone and install this skill into your local agent skills directory:
+Install this skill into your local agent skills directory:
 
 ```bash
-mkdir -p ~/.agents/skills && if [ -d ~/.agents/skills/wiki/.git ]; then git -C ~/.agents/skills/wiki pull --ff-only; else git clone https://github.com/liuyuqing803/wiki-skill.git ~/.agents/skills/wiki; fi
+curl -fsSL https://raw.githubusercontent.com/liuyuqing803/wiki-skill/main/install.sh | bash
 ```
 
 ## Contents
 
 - `SKILL.md` - main skill workflow and guardrails.
+- `install.sh` - one-command installer for local agent skill directories.
 - `agents/openai.yaml` - OpenAI-facing agent metadata.
 
 ## Purpose
